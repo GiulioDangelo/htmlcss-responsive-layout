@@ -42,3 +42,87 @@ nav ul{
 .hamburger{
     display: none;
 }
+
+/* app download */
+
+.app-download{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.container-card{
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    background-color: rgb(181,221,255);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card i{
+    font-size: 70px;
+    text-align: center;
+    padding: 30px;
+    color:rgb(0,132,253);
+}
+
+.card h2{
+    color: rgb(0,132,253);
+}
+
+.card p{
+    padding: 25px;
+    text-align: center;
+}
+
+.card-big{
+    display: flex;
+    background-color: rgb(181,221,255);
+    border-radius: 20px;
+}
+
+.card-big-left{
+    padding: 20px;
+    font-size: 18px;
+    
+}
+
+.card-big-left h2{
+    color:rgb(0,132,253) ;
+}
+
+.card-big-left button{
+    background-color:rgb(0,132,253);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 45px; 
+    font-size: 18px;
+}
+
+.card-big-left p{
+    margin: 25px 0 25px;
+    color:rgb(94, 94, 94) ;
+}
+
+.card-big img{
+    height: 300px;
+}
+
+.cell{
+    padding: 10px;
+    display: flex;
+    width: 33.333%;
+}
+
+.cell-big{
+    width: 66.666%;
+    padding: 10px;
+}
