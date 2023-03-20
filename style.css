@@ -193,3 +193,52 @@ nav ul{
     align-items: center;
     margin-top:20px ;
 }
+
+/* partner */
+.partners{
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.container-row{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    background-color: rgb(151,146,228);
+    border-radius: 30px;
+}
+
+.row-img{
+    width: 35%;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.row-img img{
+    max-width: 100%;
+}
+
+.row-text{
+    margin-left: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.row-text span{
+    margin-top: 20px;
+    font-weight: 800;
+}
