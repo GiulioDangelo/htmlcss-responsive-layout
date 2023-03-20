@@ -16,7 +16,7 @@ nav{
     max-width: 1300px;
     display: flex;
     align-items: center;
-    justify-content: space-between;  
+    justify-content: space-between;
 }
 
 nav ul{
@@ -91,7 +91,7 @@ nav ul{
 .card-big-left{
     padding: 20px;
     font-size: 18px;
-    
+
 }
 
 .card-big-left h2{
@@ -103,7 +103,7 @@ nav ul{
     border: none;
     border-radius: 20px;
     color: white;
-    padding: 10px 45px; 
+    padding: 10px 45px;
     font-size: 18px;
 }
 
@@ -139,15 +139,19 @@ nav ul{
     display: flex;
     justify-content: center;
     max-width: 1000px;
+    column-gap: 3em ;
+    margin-bottom: 50px;
 }
 
 .planning-left{
     color: white;
+    width: 50%;
+    margin-top: 70px;
 }
 
 .planning-left img{
-    height: 40%;
-    margin: 90px;
+    margin-bottom: 3em;
+    max-width: 100%;
 }
 
 .planning-left h3{
@@ -157,14 +161,35 @@ nav ul{
 
 .planning-right{
     background-color: white;
-    /* align-self: flex-end; */
-    border-radius: 70px;
+    align-self: flex-end;  
+    border-radius: 50px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+     width: 40%;
+     padding: 30px;
 }
 
 .planning-right img{
-    height: 30%;
+    max-width: 100%;
+}
+
+.planning-right p{
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.arrow i{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(151,146,228);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px ;
 }
