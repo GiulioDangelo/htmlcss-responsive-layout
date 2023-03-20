@@ -126,3 +126,45 @@ nav ul{
     width: 66.666%;
     padding: 10px;
 }
+
+/* planning section */
+.violet-img{
+    background-color:rgb(151,146,228) ;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.planning-container{
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+}
+
+.planning-left{
+    color: white;
+}
+
+.planning-left img{
+    height: 40%;
+    margin: 90px;
+}
+
+.planning-left h3{
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+.planning-right{
+    background-color: white;
+    /* align-self: flex-end; */
+    border-radius: 70px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.planning-right img{
+    height: 30%;
+}
