@@ -335,10 +335,18 @@ nav ul{
     display: flex;
     max-width: 1300px;
     margin: auto;
+    justify-content: space-around
 }
 
 .about-left{
-    flex: 0 0 82%;
+    flex: 0 0 60%;
+}
+
+.about-left p{
+    padding-right:100px ;
+    margin-top: 50px;
+    line-height: 25px;
+    margin-bottom:70px ;
 }
 
 .about-left h2{
@@ -348,7 +356,8 @@ nav ul{
 }
 
 .about-right{
-    
+    margin-top: 60px;
+    flex: 0 0 20%;
 }
 
 .container-img{
@@ -359,5 +368,94 @@ nav ul{
 }
 
 .container-img img{
-  max-width: 100%
+  max-width: 100%;
+}
+
+.about-right p{
+    margin: 30px 0;
+    font-size: 25px;
+    color: rgb(151,146,228);
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.about-right button{
+    background-color:rgb(151,146,228) ;
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 30px;
+}
+
+.about-quote{
+    color:rgb(151,146,228) ;
+    font-size: 80px;
+    top: 65px;
+    position: relative;
+    left: 140px;
+}
+
+/* get started */
+.get-started{
+    background-color:rgb(151,146,228) ;
+}
+
+.container-started{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 40px 0px;
+    color: white;
+    max-width: 500px;
+    text-align: center;
+}
+
+.get-started h2{
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.yellow{
+    color: rgb(231, 196, 37);
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.container-started p{
+    margin-bottom: 20px;
+}
+
+.container-started button{
+    color:rgb(151,146,228) ;
+    padding: 20px 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+.container-started a{
+    color: white;
+}
+
+/* footer */
+footer{
+    background-color: rgb(51,51,51);
+    color: white;
+    text-align: center;
+}
+
+.content-foot{
+    max-width:500px ;
+    margin: auto;
+}
+
+.foot-top,.foot-bottom{
+    padding: 30px 0;
+}
+
+.foot-bottom a{
+    color:rgb(151,146,228) ;
 }
