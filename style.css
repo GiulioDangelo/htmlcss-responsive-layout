@@ -16,7 +16,7 @@ header{
 
 nav{
     height: 4rem;
-    width: 1300px;
+    width: 100%;
     max-width: 1300px;
     display: flex;
     align-items: center;
@@ -45,6 +45,8 @@ nav ul{
 
 .hamburger{
     display: none;
+    color: white;
+    margin-right: 30px;
 }
 
 /* app download */
@@ -118,6 +120,9 @@ nav ul{
 
 .card-big img{
     height: 300px;
+    width: 300px;
+    /* min-width: 0; */
+    /* flex: 0 0 50%; */
 }
 
 .cell{
@@ -239,13 +244,13 @@ nav ul{
 
 .row-img{
     width: 35%;
-    border-radius: 50%;
     overflow: hidden;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
 }
 
-.row-img img{ /*  need fix */
+.row-img img{
     max-width: 100%;
     border-radius: 50%;
     height: 150px;
@@ -459,3 +464,39 @@ footer{
 .foot-bottom a{
     color:rgb(151,146,228) ;
 }
+
+/* media query */
+@media (max-width: 1010px){
+    .list-top{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .card-big{
+        flex-direction: column;
+    }
+
+    .planning-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .planning-left{
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .planning-right{
+        align-self: center;
+        width: 90%;
+        margin-inline: 20px;
+    }
+
+    .cell-benefit{
+        width: calc( 100% / 2 );
+    }
+}
+
