@@ -29,6 +29,19 @@ nav ul{
     list-style: none;
 }
 
+.logo-top{
+    margin-left:20px ;
+}
+
+.list-top,ul,li{
+    height: 100%;
+}
+
+ul li{
+    display: flex;
+    align-items: center;
+}
+
  ul li a{
     margin-inline:25px ;
     color: white;
@@ -62,6 +75,7 @@ nav ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-inline: 10px
 }
 
 .card{
@@ -86,12 +100,18 @@ nav ul{
 .card p{
     padding: 25px;
     text-align: center;
+    line-height: 30px;
 }
 
 .card-big{
     display: flex;
+    align-items: flex-end;
     background-color: rgb(181,221,255);
     border-radius: 20px;
+}
+
+.card-big p{
+    line-height: 30px;
 }
 
 .card-big-left{
@@ -111,6 +131,7 @@ nav ul{
     color: white;
     padding: 10px 45px;
     font-size: 18px;
+    margin-top: 33px;
 }
 
 .card-big-left p{
@@ -240,6 +261,7 @@ nav ul{
     align-items: center;
     background-color: rgb(151,146,228);
     border-radius: 30px;
+    margin-inline: 20px;
 }
 
 .row-img{
@@ -293,10 +315,11 @@ nav ul{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 .cell-benefit{
-    padding: 20px;
+    padding:20px;
     display: flex;
     width: calc( 100% / 3 )
 }
@@ -340,7 +363,7 @@ nav ul{
     display: flex;
     max-width: 1300px;
     margin: auto;
-    justify-content: space-around
+    justify-content: space-around;
     margin-top: 60px;
 }
 
@@ -466,6 +489,11 @@ footer{
 }
 
 /* media query */
+@media (max-width:1009){
+    :hover{
+        display: none;
+    }
+}
 @media (max-width: 1010px){
     .list-top{
         display: none;
@@ -477,6 +505,11 @@ footer{
 
     .card-big{
         flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card-big-left button{
+        margin-top: 0;
     }
 
     .planning-container{
@@ -487,6 +520,10 @@ footer{
     .planning-left{
         width: 80%;
         margin-bottom: 50px;
+    }
+
+    .planning-left h3{
+        font-size: 45px;
     }
 
     .planning-right{
@@ -558,5 +595,63 @@ footer{
 
     .get-started h2 {
         text-align: center;
+    }
+}
+
+/* effetti hover */
+li:not(:last-child):hover{
+    cursor: pointer;
+    background-color: rgb(14, 119, 218);
+}
+
+li button:hover,.container-started button:hover{
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+.logo-top:hover{
+    cursor: pointer;
+}
+
+.card-big-left button:hover{
+    cursor: pointer;
+    background-color: rgb(0, 99, 192);
+}
+
+.benefit-btn:hover,.about-right button:hover{
+    cursor: pointer;
+    background-color:rgb(127, 123, 190) ;
+}
+
+.arrow i:hover{
+    cursor: pointer;
+    background-color:rgb(127, 123, 190);
+}
+
+.card-big:hover{
+    box-shadow: 2px 2px 20px black;
+    cursor: pointer;
+}
+
+.card:hover{
+    box-shadow: 2px 2px 20px black;
+    cursor: pointer;
+}
+
+.row:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.benefit-card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 2px 2px 20px black;
+    cursor: pointer;
+}
+
+@media (max-width: 1010px) {
+    .benefit-card:hover,.row:hover{
+        transform: scale(1.0);
     }
 }
